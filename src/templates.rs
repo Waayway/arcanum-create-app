@@ -5,15 +5,15 @@ use rust_embed::RustEmbed;
 use crate::projectargs::ProjectArgs;
 
 #[derive(RustEmbed)]
-#[folder = "templates/default-html-rust"]
+#[folder = "$CARGO_MANIFEST_DIR/templates/default-html-rust"]
 struct DefaultHtmlRust;
 
 #[derive(RustEmbed)]
-#[folder = "templates/rust-html-scss-js"]
+#[folder = "$CARGO_MANIFEST_DIR/templates/rust-html-scss-js"]
 struct RustHtmlScssJs;
 
 #[derive(RustEmbed)]
-#[folder = "templates/rust-html-scss-ts"]
+#[folder = "$CARGO_MANIFEST_DIR/templates/rust-html-scss-ts"]
 struct RustHtmlScssTs;
 
 pub fn from_template(projectargs: &ProjectArgs) {
