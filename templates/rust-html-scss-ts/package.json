@@ -1,0 +1,22 @@
+{
+  "name": "rust-html-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass -w scss:css",
+    "sass-build": "sass scss:css --style=compressed",
+    "ts-dev": "tsc -w",
+    "ts-build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.59.3"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}
